@@ -7,9 +7,9 @@ const NavBar = () => {
             <nav>
                 <a href="#"><img src={MiImagen} className='logo-albinegro' alt="" /></a>
                 <div className='header-div'>
-                    <a href="#">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Contacto</a>
+                    <a href="#">Camisetas</a>
+                    <a href="#">Buzos</a>
+                    <a href="#">Pantalones</a>
                 </div>
                 <CartWidget />
             </nav>
