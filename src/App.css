@@ -1,4 +1,4 @@
-header {
+.section-navbar {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   margin-bottom: 10px;
@@ -6,7 +6,7 @@ header {
   background-color: white;
 }
 
-header nav {
+.section-navbar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,11 +50,11 @@ header nav {
   height: 40px;
 }
 
-header nav img {
+.section-navbar nav img {
   height: 25px;
 }
 
-header nav a {
+.section-navbar nav a {
   text-decoration: none;
   color: black;
   font-family: Tahoma, sans-serif;
@@ -63,7 +63,7 @@ header nav a {
   position: relative;
 }
 
-header nav a:hover {
+.section-navbar nav a:hover {
   color: rgb(253, 174, 4);
   font-family: Tahoma;
   font-size: 20px;

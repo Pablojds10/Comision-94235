@@ -3,7 +3,7 @@ import MiImagen from './Img/BYN.png'
 
 const NavBar = () => {
     return (
-        <header>
+        <section className='section-navbar'> 
             <nav>
                 <a href="#"><img src={MiImagen} className='logo-albinegro' alt="" /></a>
                 <div className='header-div'>
@@ -13,7 +13,8 @@ const NavBar = () => {
                 </div>
                 <CartWidget />
             </nav>
-        </header>
+        </section>
+            
     );
 };
 
