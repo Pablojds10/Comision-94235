@@ -1,0 +1,70 @@
+header {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 60px;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-body{
+  font-family: Tahoma;
+  text-align: center;
+  font-size: 25px;
+}
+
+.nav-right {
+  position: relative;
+}
+
+.acumulado-carrito {
+  background-color: rgb(253, 174, 4);
+  border-radius: 100%;
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+}
+
+.logo-albinegro {
+  height: 40px;
+}
+
+header nav img {
+  height: 25px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-family: Tahoma, sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+header nav a:hover {
+  color: rgb(253, 174, 4);
+  font-family: Tahoma;
+  font-size: 20px;
+}
