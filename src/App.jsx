@@ -1,7 +1,7 @@
 import './App.css'
 import ItemListContainer from './componentes/ItemListContainer'
 import DetailContainer from './componentes/DetailContainer'
-import NavbarContainer from './componentes/NavBarContainer'
+import NavbarContainer from './componentes/NavbarContainer'
 import { BrowserRouter, Routes, Route } from 'react-router'
 
 function App() { 
