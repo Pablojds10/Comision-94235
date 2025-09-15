@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import withLoading from "../hoc/withLoading";
+import withLoading from "../hoc/WithLoading";
 import { useParams } from "react-router";
 
 const ItemListWithLoading = withLoading(ItemList)

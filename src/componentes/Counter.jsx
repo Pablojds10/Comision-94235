@@ -16,7 +16,7 @@ function Counter() {
             <p>{count}</p>
             <Button onClick={handleAdd} >+</Button>
             <Button onClick={handleSub} variant='danger'>-</Button>
-            <Button onClick={handleSub} variant='success'>AGREGAR</Button>
+            <Button variant='success'>AGREGAR</Button>
         </div>
     )
 }
