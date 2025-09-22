@@ -15,7 +15,7 @@ function Counter() {
         <div>
             <p>{count}</p>
             <Button onClick={handleAdd} >+</Button>
-            <Button onClick={handleSub} variant='danger'>-</Button>
+            <Button onClick={handleSub} variant='danger' disabled={count === 0} >-</Button>
             <Button variant='success'>AGREGAR</Button>
         </div>
     )
