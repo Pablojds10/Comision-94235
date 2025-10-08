@@ -31,7 +31,7 @@ function Checkout () {
 
     }
 
-    if (cart.length) {
+    if (cart.length === 0) {
         return <h2 className='text-center mt-5'>No hay elementos en el carrito</h2>
     }
 
