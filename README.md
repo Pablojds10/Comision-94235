@@ -1,12 +1,37 @@
-# React + Vite
+# 🏁 Tienda Albinegra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tienda Albinegra** es una aplicación de **e-commerce desarrollada en React** para la venta de indumentaria deportiva del **Club Centro Blanco y Negro de Coronel Suárez**, enfocada principalmente en la ropa de su equipo de fútbol.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Funcionalidades principales
 
-## Expanding the ESLint configuration
+1. Mostrar todos los productos disponibles.  
+2. Filtrar productos por **categoría** (remeras, shorts, buzos, etc.).  
+3. Agregar productos al **carrito de compras**.  
+4. Visualizar el contenido del carrito y el total.  
+5. **Finalizar la compra**, generando un formulario para ingresar los datos del comprador.  
+6. Enviar la orden (simulada o mediante **Firebase Firestore**).  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Dependencias principales
+
+| Librería | Descripción | Documentación oficial |
+|-----------|--------------|------------------------|
+| **React** | Librería principal para construir interfaces de usuario. | 🔗 [react.dev](https://react.dev) |
+| **React DOM** | Renderiza componentes React en el DOM. | 🔗 [react.dev/reference/react-dom](https://react.dev/reference/react-dom) |
+| **React Router** | Maneja la navegación y las rutas internas. | 🔗 [reactrouter.com](https://reactrouter.com) |
+| **React Router DOM** | Extensión de React Router para aplicaciones web. | 🔗 [reactrouter.com/en/main](https://reactrouter.com/en/main) |
+| **Firebase** | Plataforma backend (base de datos, auth, Firestore, hosting, etc.). | 🔗 [firebase.google.com/docs](https://firebase.google.com/docs) |
+| **React Bootstrap** | Componentes de Bootstrap adaptados a React. | 🔗 [react-bootstrap.github.io](https://react-bootstrap.github.io) |
+| **Reactstrap** | Alternativa de componentes Bootstrap para React. | 🔗 [reactstrap.github.io](https://reactstrap.github.io) |
+
+---
+
+## 🚀 Instalación y ejecución local
+
+### 1️⃣ Clonar el repositorio
+```bash
+git clone <tu-repo-url>
+cd tienda-albinegra

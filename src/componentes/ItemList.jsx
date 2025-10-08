@@ -4,12 +4,12 @@ import Row from "react-bootstrap/Row";
 
 function ItemList ( {items} ) {
     return (
-        <Container className="MT-4">
+        <Container className='mt-5'>
             <Row>
-                {items.map (items => <Item key={items.id} items={items}/>)}
+                {items.map (items => <Item items={items} key={items.id}/>)}
             </Row>
         </Container>
     )
 }
 
-export default ItemList;
+export default ItemList

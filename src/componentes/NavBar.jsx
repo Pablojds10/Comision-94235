@@ -15,9 +15,14 @@ function NavBar({ categories }) {
           <Nav className="me-auto">
             <NavDropdown title="Categorías" id="basic-nav-dropdown">
               {categories.map(category => (
-              <NavDropdown.Item as={NavLink} to={`/category/${category}` } style= {({ isActive }) => ({
-                   color: isActive ? "yellow" : "black",})} key={category}>
-                  {category}
+              <NavDropdown.Item 
+                as={NavLink} 
+                to={`/category/${category.categoryName}` } 
+                style= {({ isActive }) => ({
+                  color: isActive ? "yellow" : "black",})} 
+                key={category.id}
+              >
+                {category.categoryName}
               </NavDropdown.Item>  
               ))}
             </NavDropdown>
