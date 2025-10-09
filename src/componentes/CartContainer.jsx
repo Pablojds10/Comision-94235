@@ -4,14 +4,24 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router";
 
+
 function CartContainer () {
-    const { cart, getTotal } = useContext(CartContext)
+    const { cart, getTotal, clearCart } = useContext(CartContext)
     const total = getTotal()
     const navigate = useNavigate()
 
     if (cart.length === 0) {
         return(
-            <div>"Carrito Vacio"</div>
+            <div className="text-center mt-5">
+                <h3>🛒 Carrito Vacio</h3>
+                <Button
+                    variant="primary"
+                    className="mt-3"
+                    onClick={() => navigate('/')}
+                >
+                    Ver Productos
+                </Button>
+            </div>
         )
     }
     return (
@@ -24,12 +34,20 @@ function CartContainer () {
                 ))}
             </ListGroup>
             <h2 className="mt-3">Total: $ {total}</h2>
-            <Button 
-                className="btn btn-primary mt-5"
-                onClick={() => navigate('/checkout')}
-            >
-                Finalizar Compra
-            </Button>
+
+            <div className="d-flex gap-3 mt-4">
+                <Button variant="primary" onClick={() => navigate('/checkout')}>
+                    Finalizar Compra
+                </Button>
+
+                <Button variant="outline-danger" onClick= { clearCart }>
+                    Vaciar Carrito
+                </Button>
+
+                <Button variant="outline-secondary" onClick={() => navigate('/')}>
+                    Seguir Comprando
+                </Button>
+            </div>
         </div>
     )
 }

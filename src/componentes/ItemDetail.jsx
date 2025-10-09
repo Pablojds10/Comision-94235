@@ -7,16 +7,18 @@ import Counter from './Counter';
 function ItemDetail({ item }) {
     return (
         <Container className="mt-5">
-            <Row>
-                <Col>
-                    <Image src={item?.image} className='img-fluyd' width='400' height='300'/>
+            <Row className="align-items-center">
+                <Col md={6} className="text-center">
+                    <Image src={item?.image} className="img-fluid rounded shadow-sm" width='300' height='300'/>
                 </Col>
-                <Col>
-                    <h2>{item?.name}</h2>
-                    <p >{item?.description}</p>
-                    <h3>Price: ${item?.price}</h3>
-                    <h4>Stock: {item?.stock} units</h4>
-                    <Counter item={item} />
+                <Col md={6}>
+                    <h2 className="fw-bold">{item?.name}</h2>
+                    <p className="text-muted">{item?.description}</p>
+                    <h3 lassName="text-success">Price: ${item?.price}</h3>
+                    <h5>Stock disponible: {item?.stock} units</h5>
+                    <div className="mt-3">
+                        <Counter item={item} />
+                    </div>
                 </Col>
             </Row>
         </Container>

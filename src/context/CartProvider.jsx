@@ -4,11 +4,19 @@ import { useState } from "react";
 function CartProvider({ children }) {
     const [cart, setCart] = useState([])
 
-    const addToCart = item => {
-        if (cart.some(prod => prod.id === item.id)) {
-            return
-        }
-        setCart([...cart, item]) 
+    const addToCart = (item) => {
+        setCart((prevCart) => {
+            const existingItem = prevCart.find((prod) => prod.id === item.id);
+            if (existingItem) {
+                return prevCart.map((prod) =>
+                    prod.id === item.id
+                        ? { ...prod, count: prod.count + item.count }
+                        : prod
+                )
+            } else {
+                return [...prevCart, item]
+            }
+        })
     }
 
     const getQuantity = () => {
@@ -23,8 +31,12 @@ function CartProvider({ children }) {
         return total
     }
 
+    const clearCart = () => {
+        setCart([])
+    }
+
     return (
-    <CartContext.Provider value={{ addToCart, getQuantity, cart, getTotal }}>
+    <CartContext.Provider value={{ addToCart, getQuantity, cart, getTotal, clearCart }}>
         {children}
     </CartContext.Provider>
     )
